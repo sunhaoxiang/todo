@@ -33,7 +33,7 @@ h1{
     float: right;
 }
 
-input, .task-item, .task-detail-mask, textarea, button{
+input, .task-item, .task-detail-mask, .task_detail, textarea, button{
     padding: 10px;
     border-radius: 3px;
 }
@@ -75,8 +75,11 @@ button{
     margin-right: 1%;
 }
 
-.add-task [type=submit]{
+[type=submit]{
     background: #46b1e4;
+}
+
+.add-task [type=submit]{
     width: 15%;
 }
 
@@ -110,9 +113,14 @@ button{
     background: #fff;
     color: #333;
     width: 50%;
+    height: 100%;
     padding: 10px;
     bottom: 0;
     right: 0;
+    border-radius: 3px 0 0 3px;
+    -webkit-box-shadow: 0 1px 2px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 2px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px 1px rgba(0,0,0,0.1);
 }
 
 .task-detail .content{
@@ -121,16 +129,16 @@ button{
     cursor: pointer;
 }
 
-.task-detail > *{
+.task-detail .input-item{
     margin-bottom: 10px;
 }
 
 .task-detail-mask{
+    position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(30,30,30,0.6);
 }
 
 .task-content{
