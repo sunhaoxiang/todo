@@ -127,6 +127,7 @@ button{
 
 .task-detail{
     background: #fff;
+    overflow: auto;
     color: #333;
     width: 50%;
     height: 100%;
